@@ -316,7 +316,7 @@ padding:.3vw .8vw;
 #about-menu {
   padding-top: 5vw;
   display: grid;
-  grid-template-columns: 2fr 5fr 1fr;
+  grid-template-columns: 2fr 5fr;
   align-items: center;
   margin-bottom: 7vw;
 }
@@ -340,7 +340,7 @@ padding:.3vw .8vw;
 
 #about-menu p {
   font-family: var(--tertiary-font);
-  font-size: 1.4vw;
+  font-size: 1.6vw;
   color: black;
   line-height: 2.25vw;
   padding-left: 4vw;
@@ -351,7 +351,38 @@ padding:.3vw .8vw;
   height: 30vw;
   padding-top: 1.1vw;
   padding-left: 5vw;
-  
+}
+
+#education-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2vw;
+}
+
+#education-menu > .education {
+grid-column-start: 1;
+}
+
+#education-menu > .skills {
+  grid-column-start: 2;
+}
+
+#education-menu h4 {
+  font-size: 3vw;
+  font-weight: 400;
+    font-family: var(--primary-font);
+padding-right: 3vw;
+padding-left: 3vw; 
+}
+
+#education-menu p {
+  font-size: 2.5vw;
+  text-align: left;
+}
+
+#education-menu ul {
+  font-size: 2.5vw;
+  padding-right: 0px;
 }
 
 #contact-menu {
