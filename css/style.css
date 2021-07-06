@@ -339,7 +339,7 @@ padding:.3vw .8vw;
 
 #about-menu p {
   font-family: var(--tertiary-font);
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   color: black;
   line-height: 2.25vw;
   padding-left: 4vw;
@@ -371,8 +371,8 @@ padding:.3vw .8vw;
   color: var(--secondary-color);
   text-align: left;
   background: black;
-   margin-left: -5vw;
-  margin-right: 55vw;
+   margin-left: -4vw;
+  margin-right: 68vw;
   margin-top: 2vw;
   margin-bottom: 3vw;
   padding: 3vw 7vw 3vw 7vw;
