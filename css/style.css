@@ -352,10 +352,11 @@ padding:.3vw .8vw;
 }
 
 #contact-menu {
+  background: var(--tertiary-color);
   color: var(--tertiary-color);
   font-family: var(--primary-font);
   align-items: center;
-  max-width: 80%;
+  max-width: 100%;
   padding: 3vw;
   padding-top: 10vw;
 }
