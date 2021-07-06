@@ -178,3 +178,89 @@ p {
   margin-bottom: 3vw;
   padding: 3vw 3vw 3vw 5vw;
 }
+
+.canvas {
+  grid-column: 1/span 4;
+  grid-row: 2/span 1;
+  width: 40vw;
+  padding: 2vw 5vw;
+}
+
+.laboratory-website-redesign {
+  grid-column: 1/span 5;
+  grid-row: 4/span 2;
+  padding: 1vw 1vw;
+}
+
+.wikihow-app-redesign {
+  grid-column: 6/span 4;
+  grid-row: 2/span 3;
+  padding-left: 7.8vw;
+  padding-top: 15vw;
+  padding-left: 13.5vw;
+  width: 60%;
+  height: auto;
+}
+
+.container {
+  margin: 0;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  cursor: default;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+  cursor: default;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.content-detail {
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  padding: 0 2vw;
+  cursor: default;
+}
+
+.content:hover .content-detail {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  cursor: default;
+  align-items: center;
+}
