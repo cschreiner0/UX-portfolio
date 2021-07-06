@@ -492,6 +492,8 @@ footer p{
   font-weight: 400;
     font-family: var(--primary-font);
 opacity: 80%;
+padding-right: 3vw;
+padding-left: 3vw; 
   }
 
   .info-title h3 {
@@ -814,6 +816,11 @@ padding: 3vw;
 
 .split-text > .text-right {
   grid-column-start: 2/span 1;
+}
+
+.more-projects > a > button:hover {
+background: var(--primary-color);
+color: white;
 }
 
 ul {
