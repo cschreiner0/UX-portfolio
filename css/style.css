@@ -1,18 +1,12 @@
 /*Go get Overpass Black 900 font for h1*/
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 /*Go get Syne Regular 400 font for h2*/
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap');
-
-/*Go get Syne Regular 400 font for h3 & h4*/
-@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
-
-/*Go get Syne Regular 400 font for h4*/
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700&display=swap');
 
 /*Go get Nunito Regular 400 font for p*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&family=Syne:wght@400;500;700&display=swap');
 </style>
 
 /* :root is equivalent to `html` with a higher specificity */
@@ -20,375 +14,94 @@
 /* Variables defined here
   Style Guide in Code!!!
 */
+
+
+
+body {
+  margin: 0px;
+}
+
 :root {
-  --scary-color: #238bc7;
-  --fun-color: blueviolet;
-  --light-mode: #ddd;
-  --dark-mode: #333;
-}
+  --primary-color: rgb(82, 167, 91); /*light yellow*/
+  --secondary-color: #FFD977; /*peachy*/
+  --tertiary-color: #303c6c; /*dark blue*/
 
-h1 {
-  color: var(--scary-color);
-  font-family: 'Overpass', sans-serif;
-  letter-spacing: 2px;
-  font-size: 28px;
-}
-
-h2{
-  font-family: 'Syne', sans-serif;
-  font-weight: 700;
-}
-
-h3{
-  font-family: 'Syne', sans-serif;
-  font-weight: 600;
-  color: #000000;
-}
-
-h4 {
-  margin: 0;
-  font-family: 'Syne', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-}
-
-p {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 12px;
-  width: 300px;
-  color: white;
-}
-
-figcaption{
-  font-family: 'Nunito Sans', sans-serif;
-  weight: 400;
-  padding: 5px;
-}
-
-.portfolio h1 {
-  text-align: left;
-  padding-left: 5%;
-}
-
-nav {
-  /* "sticky" or "fixed" */
-  position: fixed; 
-  background: black;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  display: flex;
-}
-
-.nav {
-  justify-content: left;
-  color: #FFD977;
-  font-family: 'Syne', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-nav li{
-  list-style-type: none;
-  display: inline-block;
-  padding: 5px 5px 5px 5px;
-}
-
-header {
-  background-image: url(/img/background.svg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  text-align: left;
-  margin-top: 60px;
-  padding-left: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  position: relative;
-  z-index: 0;
-}
-
-header img {
-  position: absolute; 
-  bottom: 100;
-  right: 0;
-  z-index: -1;
-  padding-right: 5%;
-
-  filter: drop-shadow(-16px 8px 14px rgba(0, 0, 0, 0.25));
-}
-
-header h1 {
-  color: white;
-  padding-bottom: 0px;
-  /*font-size: 60px;*/
-}
-
-header h4 {
-  color:#FFD977;
-  padding-top: 0px;
-  /*font-size: 21px;*/
-}
-
-header p{
-  width: 180px;
-}
-
-#me {
-  width: 100%;
-  height: auto;
+--primary-font: Overpass, sans-serif;
+--secondary-font: Syne, sans-serif;
+--tertiary-font: Nunito, sans-serif;
 }
 
 body {
-  text-align: center;
-}
-
-#portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: top;
+  background: white;
+  margin: 0px;
 }
 
 a {
-  position: relative;
-  horizontal-align: center;
+  text-decoration: none;
 }
 
-figure {
-  flex: 0.5 1 250px;
-  flex-direction: column;
-  height: auto;
-  padding: 1rem;
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  font-family: var(--secondary-font);
+  background:black;
+  z-index: 2;
+  margin: 0;
+  padding: 0.3vw 2vw 0.3vw 1.2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 12px rgb(0 0 0 / 0.3);
+  position: sticky; top: 0
 }
 
-figcaption {
-  text-align: left;
+nav img {
+  width: 7vw;
+  padding: 1.2vw;
 }
 
-figure a{
-  color: blue;
+nav h1 {
+  justify-content: flex-start;
+  flex-grow: 1;
+  font-family: var(--tertiary-font);
+  font-size: 3vw;
+  letter-spacing: .5px;
+  font-weight: 300;
+  color: var(--secondary-color);
+  cursor: default;
 }
 
-figure a:hover{
-  color: green;
+nav a {
+  color: var(--secondary-color);
+  font-size: 1.5vw;
+  padding: 2vw 0.5vw;
+  margin: 0px 1vw;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
-figure a:visited{
-color: purple;
+nav a:hover,
+nav a:active {
+  transform: scale(1.1);
+  opacity: 1;
+  font-weight: 600;
 }
 
-.contact {
-  background: black;
-  color: #FFD977;
-  padding-bottom: 2%;
-}
-
-.contact h2 {
-  text-align: left;
-  padding-left: 5%;
-  padding-top: 2%;
-}
-
-.contact p {
-  color: white;
-  text-align: left;
-  padding-left: 6%;
-}
-
-button:hover {
-  background: #5CB865;
-  color: white;
-}
-
-.form {
-  color: black; 
-}
-
-.bg0 {
-  background: rgb(252, 252, 238);
-  background: linear-gradient(
-    90deg,
-    rgba(252, 252, 238, 1) 0%,
-    rgba(236, 255, 239, 1) 48%,
-    rgba(237, 252, 255, 1) 100%
-  );
-}
-
-.bg1 {
-  background: rgb(252, 252, 238);
-  background: linear-gradient(
-    90deg,
-    rgba(252, 252, 238, 1) 0%,
-    rgba(249, 236, 255, 1) 48%,
-    rgba(252, 245, 240, 1) 81%,
-    rgba(233, 232, 255, 1) 100%
-  );
-}
-
-.bg2 {
-  background: rgb(255, 248, 236);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 248, 236, 1) 10%,
-    rgba(255, 241, 241, 1) 37%,
-    rgba(255, 241, 231, 1) 68%,
-    rgba(252, 252, 240, 1) 87%
-  );
-}
-
-.bg3 {
-  background: rgb(236, 255, 254);
-  background: linear-gradient(
-    90deg,
-    rgba(236, 255, 254, 1) 10%,
-    rgba(249, 241, 255, 1) 37%,
-    rgba(232, 235, 250, 1) 64%,
-    rgba(240, 247, 252, 1) 79%,
-    rgba(240, 247, 252, 1) 99%
-  );
-}
-
-.lg {
-  border: 2px solid lightblue;
-  width: 150px;
-  height: 150px;
-  border-radius: 10px;
-  box-sizing: border-box;
-}
-
-div.lg-item,
-div.lg-loaded,
-div.lg-current,
-div.lg-complete {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-/* Custon Gallery */
-.jg-backdrop.in {
-}
-
-/*font resizing or h1*/
-@media screen and (min-width: 320px) {
-  header h1 {
-    font-size: calc(25px + 21 * ((100vw - 320px) / 680));
-  }
-}
-@media screen and (min-width: 1500px) {
-  header h1 {
-    font-size: 70px;
-  }
-}
-/*font resizing or h4*/
-@media screen and (min-width: 320px) {
-  h4 {
-    font-size: calc(12px + 12 * ((100vw - 320px) / 680));
-  }
-}
-@media screen and (min-width: 1500px) {
-  h4 {
-    font-size: 25px;
-  }
-}
-/*font resizing or p*/
-@media screen and (min-width: 320px) {
-  p {
-    font-size: calc(10px + 8 * ((100vw - 320px) / 680));
-  }
-}
-@media screen and (min-width: 1500px) {
-  p {
-    font-size: 20px;
-  }
-}
-
-/*width resizing for p*/
-
-@media screen and (min-width: 200px) {
-  header p {
-    width: 100px;
-  }
-}
-@media screen and (min-width: 300px) {
-  header p {
-    width: 180px;
-  }
-}
-@media screen and (min-width: 700px) {
-  header p {
-    width: 300px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  header p {
-    width: 420px;
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  header p {
-    width: 620px;
-  }
-}
-
-/*image resizing for <main> section*/
-
-
-@media screen and (min-width: 300px) {
-  #me {
-    width: 130px;
-  }
-
-  @media screen and (min-width: 410px) {
-    #me {
-      width: 140px;
-    }
-
-    @media screen and (min-width: 465px) {
-      #me {
-        width: 168px;
-      }
-    }
-
-@media screen and (min-width: 520px) {
-  #me {
-    width: 185px;
-  }
-}
-@media screen and (min-width: 600px) {
-  #me {
-    width: 205px;
-  }
-}
-@media screen and (min-width: 700px) {
-  #me {
-    width: 180px;
-  }
-}
-@media screen and (min-width: 800px) {
-  #me {
-    width: 210px;
-  }
-}
-@media screen and (min-width: 900px) {
-  #me {
-    width: 240px;
-  }
-}
-@media screen and (min-width: 1100px) {
-  #me {
-    width: 260px;
-  }
-}
-@media screen and (min-width: 1225px) {
-  #me {
-    width: 300px;
-  }
-}
-#me {
-  height: auto;
+nav a:before {
+  position: absolute;
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  top: 0px;
+  padding: 11.5px 0px;
+  overflow: hidden;
+  content: attr(alt);
+  transition: all 0.3s;
+  transform: scale(0.8);
+  z-index: 0;
+  opacity: 0.5;
 }
