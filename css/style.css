@@ -350,3 +350,104 @@ padding:.3vw .8vw;
   padding-top: 1.8vw;
   padding-left: 5vw;
 }
+
+#contact-menu {
+  color: var(--tertiary-color);
+  font-family: var(--primary-font);
+  align-items: center;
+  max-width: 80%;
+  padding: 3vw;
+  padding-top: 10vw;
+}
+
+#contact-menu h1 {
+  cursor: default;
+  font-family: var(--secondary-font);
+  font-size: 3.5vw;
+  font-weight: 200;
+  color: var(--secondary-color);
+  text-align: left;
+  background: black;
+   margin-left: -5vw;
+  margin-right: 55vw;
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+  padding: 3vw 7vw 3vw 7vw;
+}
+
+#contact-menu > .contact-left {
+  grid-column-start: 1;
+  padding-left: 2vw;
+  max-width: 100%;
+}
+
+#contact-menu > .contact-left > p {
+  font-family: var(--primary-font);
+  font-size: 1.2vw;
+  cursor: default;
+  opacity: 0.8;
+  line-height: 2em;
+  width: 100vw;
+  font-family: black;
+  font-size: 1.5vw;
+}
+
+#contact-menu form {
+  margin: 1em 0px;
+  width: 50vw;
+  max-width: 100%;
+  justify-content: center;
+}
+
+#contact-menu > .contact-left > form > button {
+  max-width: 100%;
+  font-size: 1.1vw;
+  background: var(--tertiary-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 0.3);
+  color: white;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  padding: 12px;
+  margin-right: -25px;
+  cursor: pointer;
+}
+
+#contact-menu form input,
+#contact-menu form textarea {
+  border: 1px solid var(--tertiary-color);
+  background: var(--secondary-color);
+  border-radius: 4px;
+  font-family: var(--primary-font);
+  font-size: 1.1vw;
+  color: var(--tertiary-color);
+  padding: 12px;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#contact-menu form input:focus,
+#contact-menu form textarea:focus {
+  border: 1.5px solid var(--tertiary-color);
+}
+
+footer{
+  background: black;
+  padding: 1vw;
+  cursor: default;
+}
+
+footer p{
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+  text-align: center;
+  font-size: 1.2vw;
+  font-weight: 600;
+  letter-spacing: .05vw;
+}
+
+/* How-To Bamboo App CSS */
