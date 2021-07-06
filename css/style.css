@@ -451,3 +451,199 @@ footer p{
 }
 
 /* How-To Bamboo App CSS */
+
+.project-title {
+  background: var(--tertiary-color);
+    text-align: center;
+    height: 35vw;
+    width:100%;
+}
+
+.project-title h1 {
+  color: white;
+  font-size: 3.5vw;
+  font-weight: 600;
+    font-family: var(--primary-font);
+    margin-top: 0px;
+    padding: 12vw 1vw 1vw 1vw;
+}
+
+.project-title h4 {
+  color: white;
+  font-size: 2vw;
+  font-weight: 400;
+    font-family: var(--primary-font);
+opacity: 80%;
+  }
+
+  .info-title h3 {
+    cursor: default;
+    font-family: var(--secondary-font);
+    font-size: 2vw;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-align: center;
+    background: black;
+    padding: 3vw 0vw 3vw 0vw;
+    margin: 0px;
+  }
+
+  .project-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+.project-overview > .proto {
+  grid-column-start: 2;
+}
+
+.image-new-right {
+  width: 100%;
+  height: auto;
+}
+
+.project-overview > .info-left {
+  grid-column-start: 1;
+  padding: 2vw 5vw 0vw 5vw;
+  margin-bottom: 3vw;
+}
+
+.descrip p {
+  cursor: default;
+  font-family: var(--tertiary-font);
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: black;
+  text-align: left;
+  padding: 1vw 0vw 1vw 0vw;
+  margin: 2px;
+}
+
+.descrip h3 {
+  color: var(--primary-color);
+}
+
+.info-left h4 {
+  font-family: var(--secondary-font);
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  padding: 0vw 0vw 0vw 0vw;
+  margin: 3px 0px 0px 0px;
+  opacity: 70%;
+  padding-top: 2vw;
+}
+
+.info-left h4 .item-1 {
+  font-family: var(--secondary-font);
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  padding: 0vw 0vw 0vw 0vw;
+  margin: 3px 0px 0px 0px;
+  opacity: 70%;
+  padding-top: 1vw;
+}
+
+.info-left ul {
+  font-family: var(--tertiary-font);
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: black;
+  text-align: left;
+  padding: 0vw 0vw 0vw 2.5vw;
+  margin: 3px 0px 0px 0px;
+}
+
+.info-left li {
+  padding-bottom: .2vw;
+  margin-bottom: 3px;
+}
+
+/*Challange Section of Bamboo*/
+
+.project-challange {
+  background: var(--tertiary-color);
+  display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+}
+
+.project-challange-canvas {
+  background: var(--tertiary-color);
+}
+
+.challange-image {
+  grid-column-start: 1/span 1;
+width: 100%;
+height: 100%;
+padding-right: 3vw
+}
+
+.info-right {
+  grid-column-start: 2/span 1;
+  padding: 2vw 5vw 2vw 5vw;
+}
+
+.info-right h3 {
+  cursor: default;
+  font-family: var(--secondary-font);
+  font-size: 2vw;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 1vw 0vw 1vw 0vw;
+  margin: 2px;
+}
+
+.info-right h4 {
+  font-family: var(--secondary-font);
+  font-size: 1.60vw;
+  font-weight: 500;
+  color: rgb(241, 239, 239);
+  text-align: left;
+  padding: 0vw 0vw 0vw 0vw;
+  margin: 3px 0px 0px 0px;
+  padding-top: 0vw;
+}
+
+.info-right > .summary {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  font-size: 2vw;
+  font-weight: 500;
+  text-align: center;
+}
+
+.info-right p {
+  font-family: var(--primary-font);
+  font-size: 1.75vw;
+word-spacing:1.5px;
+  font-weight: 400;
+  color: rgb(241, 239, 239);
+  text-align: left;
+  padding: 1vw 0vw 2vw 0vw;
+  margin: 3px 0px 0px 0px;
+}
+
+.info-right ul {
+  font-family: var(--primary-font);
+  font-size: 1.75vw;
+  font-weight: 400;
+  color: white;
+  text-align: left;
+  padding: 0vw 0vw 0vw 2.5vw;
+  margin: 3px 0px 0px 0px;
+}
+
+.info-right li {
+  padding-bottom: 1vw;
+}
+
+.info-right b {
+  color: var(--secondary-color);
+  font-weight: 400;
+}
