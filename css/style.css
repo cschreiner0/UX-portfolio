@@ -318,7 +318,7 @@ padding:.3vw .8vw;
   display: grid;
   grid-template-columns: 2fr 5fr;
   align-items: center;
-  margin-bottom: 7vw;
+  margin-bottom: 3vw;
 }
 
 #about-menu h1 {
@@ -339,12 +339,16 @@ padding:.3vw .8vw;
 }
 
 #about-menu p {
-  font-family: var(--tertiary-font);
-  font-size: 1.6vw;
+  font-family: var(--secondary-font);
+  font-size: 1.7vw;
   color: black;
-  line-height: 2.25vw;
+  line-height: 2.7vw;
+  word-spacing: .3vw;
   padding-left: 4vw;
+  padding-right: 2vw;
   cursor: default;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 #about-menu img { 
@@ -368,21 +372,29 @@ grid-column-start: 1;
 }
 
 #education-menu h4 {
-  font-size: 3vw;
-  font-weight: 400;
+  font-size: 2.5vw;
+  font-weight: 600;
     font-family: var(--primary-font);
 padding-right: 3vw;
 padding-left: 3vw; 
+margin-bottom:0vw;
+color: var(--primary-color);
 }
 
 #education-menu p {
-  font-size: 2.5vw;
-  text-align: left;
+  font-size: 2vw;
+  text-align: center;
 }
 
 #education-menu ul {
-  font-size: 2.5vw;
+  font-size: 1.8vw;
   padding-right: 0px;
+  padding-top: 1.5vw;
+}
+
+#education-menu hr {
+  width: 25vw;
+  padding: 0px;
 }
 
 #contact-menu {
