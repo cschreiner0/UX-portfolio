@@ -22,9 +22,9 @@ body {
 }
 
 :root {
-  --primary-color: rgb(82, 167, 91); /*light yellow*/
+  --primary-color: #008AFF; /*light yellow*/
   --secondary-color: #FFD977; /*peachy*/
-  --tertiary-color: #303c6c; /*dark blue*/
+  --tertiary-color: #3365AA; /*dark blue*/
 
 --primary-font: Overpass, sans-serif;
 --secondary-font: Syne, sans-serif;
@@ -123,7 +123,7 @@ nav a:before {
 
 #home-menu > .short-intro {
   grid-column: 4 / span 3;
-  padding-top: 3.5vw;
+  padding-top: 2.75vw;
 }
 
 #home-menu > .short-intro > h1 {
@@ -183,7 +183,7 @@ p {
   grid-column: 1/span 4;
   grid-row: 2/span 1;
   width: 45vw;
-  padding: 10vw 5vw 0vw 6.5vw;
+  padding: 2vw 5vw 0vw 6.5vw;
 }
 
 .laboratory-website-redesign {
@@ -271,14 +271,14 @@ h3 {
   font-weight: 500;
   letter-spacing: 0.15vw;
   text-transform: uppercase;
-  font-size: 1.5vw;
+  font-size: 1.65vw;
   cursor: default;
 }
 
 .content-detail p {
   color: white;
   font-family: var(--primary-font);
-  font-size: 1vw;
+  font-size: 1.5vw;
   font-weight: 500;
   padding: 0 2vw 1.5vw 2vw;
   letter-spacing: 0.01vw;
@@ -286,26 +286,26 @@ h3 {
 }
 
 .content-link {
-    background: #cac9c9;
+    background: white;
     box-sizing: border-box;
     border-radius: 1vw;
 padding:.3vw .8vw; 
     font-family: var(--primary-font);
     font-weight: 700;
-    font-size: 1vw;
+    font-size: 1.7vw;
     color:var(--tertiary-color);
     text-decoration: none;
 }
 
 .content-link:hover {
-  background: var(--tertiary-color);
+  background: var(--primary-color);
   box-sizing: border-box;
   border-radius: 1vw;
 padding:.3vw .8vw; 
   font-family: var(--primary-font);
   font-weight: 700;
-  font-size: 1vw;
-  color:#dbd8d8;
+  font-size: 1.7vw;
+  color:white;
   text-decoration: none;
 }
 
@@ -388,8 +388,10 @@ color: var(--primary-color);
 
 #education-menu ul {
   font-size: 1.8vw;
-  padding-right: 0px;
+  padding-left: 8vw;
   padding-top: 1.5vw;
+  text-align: center;
+  list-style-type: none;
 }
 
 #education-menu hr {
@@ -482,7 +484,7 @@ color: var(--primary-color);
   border-radius: 4px;
   font-family: var(--primary-font);
   font-size: 1.1vw;
-  color: var(--tertiary-color);
+  color: black;
   padding: 12px;
   top: 0;
   left: 0;
@@ -493,7 +495,7 @@ color: var(--primary-color);
 
 #contact-menu form input:focus,
 #contact-menu form textarea:focus {
-  border: 1.5px solid var(--tertiary-color);
+  border: 1.5px solid black;
 }
 
 footer{
