@@ -123,7 +123,7 @@ nav a:before {
 
 #home-menu > .short-intro {
   grid-column: 4 / span 3;
-  padding-top: 2.75vw;
+  padding-top: 1vw;
 }
 
 #home-menu > .short-intro > h1 {
